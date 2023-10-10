@@ -63,6 +63,7 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  padding: 20px 0;
 
 }
 .footer_logo {
@@ -108,10 +109,6 @@ footer {
   align-items: center;
   padding: 40px;
   border-left: 2px solid black;
-}
-
-.rede_social {
-
 }
 
 .rede_social a {
