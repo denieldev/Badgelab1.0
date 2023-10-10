@@ -47,7 +47,8 @@ body * {
 }
 
 .opening {
-  padding: 30px;
+  padding: 60px;
+  
 }
 .introduce {
   color: #F23869;
@@ -56,6 +57,8 @@ body * {
 }
 
 footer {
+  max-height: 200px;
+  height: 200px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -63,11 +66,35 @@ footer {
 
 }
 .footer_logo {
-  width: 100px;
+  width: 200px;
+  padding: 20px;
   background-color: #F23869;
 }
 
 .footer_description {
   font-size: 16px;
   padding: 0 40px;
+}
+
+#about {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 20px;
+  padding: 60px;
+  text-align: justify;
+}
+.about_us {
+  background-color: #f2f2ed;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.headline {
+  font-size: 30px;
+  color: #F23869;
+  margin-bottom: 20px;
+}
+
+.title {
+  margin: 20px 0;
 }
