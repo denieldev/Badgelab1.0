@@ -62,7 +62,7 @@ footer {
   display: flex;
   flex-direction: row;
   align-items: center;
-
+  justify-content: space-around;
 
 }
 .footer_logo {
@@ -74,6 +74,7 @@ footer {
 .footer_description {
   font-size: 16px;
   padding: 0 40px;
+  width: 100%;
 }
 
 #about {
@@ -97,4 +98,39 @@ footer {
 
 .title {
   margin: 20px 0;
+}
+
+.contats {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 40px;
+  border-left: 2px solid black;
+}
+
+.rede_social {
+
+}
+
+.rede_social a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-left: 60px;
+  padding: 5px;
+}
+
+.rede_social a:hover{
+  color: #F23869;
+}
+
+ion-icon {
+  font-size: 25px;
+  
 }
