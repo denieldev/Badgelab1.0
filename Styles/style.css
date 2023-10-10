@@ -54,3 +54,20 @@ body * {
   text-align: center;
   margin-bottom: 15px;
 }
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+
+}
+.footer_logo {
+  width: 100px;
+  background-color: #F23869;
+}
+
+.footer_description {
+  font-size: 16px;
+  padding: 0 40px;
+}
