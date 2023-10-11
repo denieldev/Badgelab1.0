@@ -1,0 +1,42 @@
+#help_container {
+  display: flex;
+  position: absolute;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  padding: 60px;
+  z-index: 1;
+}
+
+.help_window {
+  display: flex;
+  padding: 30px;
+  background-color: rgb(233, 232, 232);
+  color: white;
+  border-radius: 10px;
+  border-bottom: 20px solid #F23869;
+}
+
+.help_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.help_contant {
+  line-height: 25px;
+}
+
+.help_title, .title {
+  color: #F23869;
+}
+
+.close_btn {
+  position: relative;
+  color: #F23869;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.help_subtitle {
+  color: black;
+}
