@@ -1,25 +1,41 @@
 #help_container {
+  width: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   height: 100vh;
-  background-color: rgb(255, 255, 255);
   padding: 60px;
   z-index: 1;
 }
 
 .help_window {
+  max-width: 600px;
+  min-width: 350px;
   display: flex;
   padding: 30px;
   background-color: rgb(233, 232, 232);
   color: white;
   border-radius: 10px;
   border-bottom: 20px solid #F23869;
+  box-shadow: black 0px 0 5px 0;
 }
 
 .help_header {
   display: flex;
+  align-items: center;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+.help_title {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.help_logo {
+  height: 30px;
 }
 
 .help_contant {
@@ -31,10 +47,17 @@
 }
 
 .close_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
   position: relative;
-  color: #F23869;
+  color: white;
   font-weight: 900;
   font-size: 20px;
+  background: #F23869;
 }
 
 .help_subtitle {
