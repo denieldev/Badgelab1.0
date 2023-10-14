@@ -1,6 +1,6 @@
 #help_container {
   width: 100%;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -12,7 +12,6 @@
 .help_window {
   max-width: 600px;
   min-width: 350px;
-  display: flex;
   padding: 30px;
   background-color: rgb(233, 232, 232);
   color: white;
