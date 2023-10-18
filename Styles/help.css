@@ -49,14 +49,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
   border-radius: 50px;
   position: relative;
   color: white;
   font-weight: 900;
   font-size: 20px;
   background: #F23869;
+}
+
+.close_btn:hover {
+  color: #F23869;
+  background: white;
+  border: #F23869 solid 2px;
+  cursor: pointer;
 }
 
 .help_subtitle {

@@ -57,8 +57,7 @@ body * {
 }
 
 footer {
-  max-height: 200px;
-  height: 200px;
+  min-height: 50px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -66,7 +65,7 @@ footer {
   padding: 20px 0;
 }
 .footer_logo {
-  width: 200px;
+  max-width: 200px;
   padding: 20px;
   background-color: #F23869;
 }
@@ -101,7 +100,7 @@ footer {
 }
 
 .contats {
-  width: 40%;
+  max-width: 40%;
   height: 100%;
   display: flex;
   flex-direction: row;
@@ -129,6 +128,30 @@ footer {
 ion-icon {
   font-size: 25px;
   
+}
+
+.btn_up {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F23869;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  color: white;
+}
+
+.btn_up:hover {
+  background: linear-gradient(#ff0044, rgb(255, 166, 0));
+  color: #202020;
+}
+
+.up_icon {
+  width: 35px;
+  height: 35px;
 }
 
 /* -------- custom scrollbar -------- */
