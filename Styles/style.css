@@ -147,6 +147,7 @@ ion-icon {
 .btn_up:hover {
   background: linear-gradient(#ff0044, rgb(255, 166, 0));
   color: #202020;
+  border: #202020 solid 2px;
 }
 
 .up_icon {
