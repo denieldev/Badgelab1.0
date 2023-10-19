@@ -20,6 +20,13 @@
   background: #F23869;
 }
 
+#bg_color {
+  background: none;
+  width: 60px;
+  height: 60px;
+  padding: 5px;
+}
+
 .tools_btn button:hover {
   background-color: rgb(195, 131, 255);
 }

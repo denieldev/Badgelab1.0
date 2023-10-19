@@ -68,3 +68,9 @@ JsBarcode("#code128", codebar, {
 }
 JsBarcode();
 
+// mudar a cor do Card, vai pegar a cor do seletor e aplicar no elemento indicado
+
+function trocaCor(){
+  var cor = document.getElementById("bg_color").value;
+  document.getElementById("card_layout").style.backgroundColor = cor;
+}
