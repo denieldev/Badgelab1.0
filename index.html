@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="./Styles/reset.css">
   <link rel="stylesheet" href="./Styles/help.css">
   <link rel="stylesheet" href="./Styles/lab.css">
+  <link rel="stylesheet" href="./Styles/tools.css">
   <script src="./JS/Badgelab.js" defer></script>
   <script src="./JS/script.js" defer></script>
 </head>
@@ -121,55 +122,73 @@
     <section class="up">
       <a href="#menu" class="btn_up"><ion-icon class="up_icon" name="arrow-up-circle-outline"></ion-icon></a>
     </section>
-
-    <div class="container_card" id="container_card">
-      <section  id="card_layout">
-          <div class="front_informations">
-              <label  for="chose_logo"><img id="brand_logo" src="/img projeto/modelo logo@3x.png"  alt="logo da empresa" /></label>
-              <input type="text" id="employeer" placeholder="NOME E SOBRENOME">
-              <figure class="img_card">
-                  <label  for="chose_photo">  <img  id="employeer_photo" src="./img projeto/idtemp.png"  alt="foto do colaborador" /></label>
-              </figure>
-              <input type="text" id="ocupation" placeholder="FUNÇÃO">
+    <section class="creative_zone">
+      <div class="container_card" id="container_card">
+        <section  id="card_layout" class="front_card">
+            <div class="front_informations">
+                <label  for="chose_logo"><img id="brand_logo" src="/img projeto/modelo logo@3x.png"  alt="logo da empresa" /></label>
+                <input type="text" id="employeer" placeholder="NOME E SOBRENOME">
+                <figure class="img_card">
+                    <label  for="chose_photo">  <img  id="employeer_photo" src="./img projeto/idtemp.png"  alt="foto do colaborador" /></label>
+                </figure>
+                <input type="text" id="ocupation" placeholder="FUNÇÃO">
+            </div>
+        </section>
+        <section id="card_layout" class="verse_card">
+          <div>
+              <h2 class="back_informations">Nome Completo</h2>
+              <input class="back_input_card" type="text" placeholder="NOME COMPLETO">
           </div>
-      </section>
-      <section id="card_layout">
-        <div>
-            <h2 class="back_informations">Nome Completo</h2>
-            <input class="back_input_card" type="text" placeholder="NOME COMPLETO">
-        </div>
-        <div>
-            <h2 class="back_informations">PIS</h2>
-            <input class="back_input_card" type="text" placeholder="NÚMERO DO PIS">
-        </div>
-        <div>
-            <h2 class="back_informations">Horário Segunda à Quinta:</h2>
-            <input class="back_input_card" type="text" placeholder="HORÁRIO">
-        </div>
-        <div>
-            <h2 class="back_informations">Horário Sexta:</h2>
-            <input class="back_input_card" type="text" placeholder="HORÁRIO">
-        </div>
-        <div>
-            <h2 class="back_informations">intervalo:</h2>
-            <input class="back_input_card" type="text" placeholder="INTERVALO">
-        </div>
-        <!-- Gerador do código de barras -->
-						<div id="barcode-div">
-              <svg id="code128"></svg>
-              </div>
-              <div>
-                  <input id="codebar-input-number" type="text" placeholder="NÚMERO DA MATRICULA" onkeyup="codeBarGen()">
-              </div>
-            </section>
-        </div>
-      <div id="function_btns">
-          <input id="chose_logo" type="file" onchange="logoFile()" hidden/><br />
-          <input id="chose_photo" type="file" onchange="previewFile()" hidden/><br/>
+          <div>
+              <h2 class="back_informations">PIS</h2>
+              <input class="back_input_card" type="text" placeholder="NÚMERO DO PIS">
+          </div>
+          <div>
+              <h2 class="back_informations">Horário Segunda à Quinta:</h2>
+              <input class="back_input_card" type="text" placeholder="HORÁRIO">
+          </div>
+          <div>
+              <h2 class="back_informations">Horário Sexta:</h2>
+              <input class="back_input_card" type="text" placeholder="HORÁRIO">
+          </div>
+          <div>
+              <h2 class="back_informations">intervalo:</h2>
+              <input class="back_input_card" type="text" placeholder="INTERVALO">
+          </div>
+          <!-- Gerador do código de barras -->
+              <div id="barcode-div">
+                <svg id="code128"></svg>
+                </div>
+                <div>
+                    <input id="codebar-input-number" type="text" placeholder="NÚMERO DA MATRICULA" onkeyup="codeBarGen()">
+                </div>
+          </section>
       </div>
-      
+      <section id="tools_bar" class="tools_bar">
+        <ul class="tools_itens">
+          <li class="tools_btn">
+            <button><a href=""><ion-icon name="color-palette"></ion-icon></a></button>
+          </li>
+          <li class="tools_btn">
+            <button><a href=""><ion-icon name="camera"></ion-icon></a></button>
+          </li>
+          <li class="tools_btn">
+            <button><a href=""><ion-icon name="image"></ion-icon></a></button>
+          </li>
+          <li class="tools_btn">
+            <button onclick="printBtnActive()"><a href=""><ion-icon name="print"></ion-icon></a></button>
+          </li>
+          <li>
+            <img src="./img/BL BW.png" alt="badgelab icone" class="tools_icon">
+          </li>
+  
+        </ul>
       </section>
-
+        <div id="function_btns">
+            <input id="chose_logo" type="file" onchange="logoFile()" hidden/><br />
+            <input id="chose_photo" type="file" onchange="previewFile()" hidden/><br/>
+        </div>
+    </section>
   </main>
 
   <footer>

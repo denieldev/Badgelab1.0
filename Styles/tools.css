@@ -1,0 +1,34 @@
+.tools_bar {
+  position: absolute;
+  right: 10px;
+  top: 1400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F23869;
+  max-width: 60px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.tools_btn button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background: #F23869;
+}
+
+.tools_btn button:hover {
+  background-color: rgb(195, 131, 255);
+}
+
+.tools_btn a{
+  color: aliceblue;
+}
+
+.tools_icon {
+  width: 60px;
+  padding: 8px;
+}
