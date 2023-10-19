@@ -79,6 +79,8 @@ footer {
 #about {
   display: grid;
   grid-template-columns: repeat(2, 2fr);
+  align-items: top;
+  justify-content: center;
   gap: 20px;
   padding: 60px;
   text-align: justify;
@@ -87,6 +89,7 @@ footer {
   background-color: #f2f2ed;
   border-radius: 10px;
   padding: 30px;
+
 }
 
 .headline {
