@@ -4,17 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Badgelab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="./Styles/style.css">
   <link rel="stylesheet" href="./Styles/reset.css">
   <link rel="stylesheet" href="./Styles/help.css">
   <link rel="stylesheet" href="./Styles/lab.css">
+  <script src="./JS/Badgelab.js" defer></script>
+  <script src="./JS/script.js" defer></script>
 </head>
 <body>
   <header id="menu" class="cabecalho">
     <figure><img class="logo" src="./img/BADGELAB LOGO.png" alt="Badgelab logo"></figure>
     <h2 class="title">Badgelab</h2>
   </header>
-  <nav class="menu_bar">
+  <nav class="menu_bar" alt="menu de navegação">
     <ul class="list_menu">
       <li class="itens_menu">
         <a href="#about">Sobre o projeto</a>
@@ -23,7 +27,7 @@
         <a href="#container_card">Laboratório</a>
       </li>
       <li class="itens_menu">
-        <a href="#help_Container" onclick="abrirDiv('help_Container')">Ajuda</a>
+        <a href="#help_Container" onclick="abrirDiv('help_Container')" alt="botão de ajuda">Ajuda</a>
       </li>
     </ul>
   </nav>
@@ -150,6 +154,21 @@
             <h2 class="back_informations">intervalo:</h2>
             <input class="back_input_card" type="text" placeholder="INTERVALO">
         </div>
+        <!-- Gerador do código de barras -->
+						<div id="barcode-div">
+              <svg id="code128"></svg>
+              </div>
+              <div>
+                  <input id="codebar-input-number" type="text" placeholder="NÚMERO DA MATRICULA" onkeyup="codeBarGen()">
+              </div>
+            </section>
+        </div>
+      <div id="function_btns">
+          <input id="chose_logo" type="file" onchange="logoFile()" hidden/><br />
+          <input id="chose_photo" type="file" onchange="previewFile()" hidden/><br/>
+      </div>
+      
+      </section>
 
   </main>
 
@@ -175,8 +194,8 @@
     </section>
   </footer>
 </body>
-
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-<script src="./JS/Badgelab.js"></script>
+<!-- código de barras -->
+<script src="https://cdn.jsdelivr.net/jsbarcode/3.3.20/JsBarcode.all.min.js"></script>
 </html>

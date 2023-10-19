@@ -73,7 +73,6 @@ footer {
 .footer_description {
   font-size: 16px;
   padding: 0 40px;
-  width: 100%;
 }
 
 #about {
@@ -100,11 +99,10 @@ footer {
 
 .title {
   margin: 20px 0;
+  text-align: left;
 }
 
 .contats {
-  max-width: 40%;
-  height: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -148,9 +146,9 @@ ion-icon {
 }
 
 .btn_up:hover {
-  background: linear-gradient(#ff0044, rgb(255, 166, 0));
-  color: #202020;
-  border: #202020 solid 2px;
+  background: white;
+  color: #F23869;
+  border: #F23869 solid 2px;
 }
 
 .up_icon {

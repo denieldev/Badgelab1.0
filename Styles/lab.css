@@ -1,18 +1,177 @@
 #container_card{
   display: flex;
-  gap: 20px;
+  gap: 100px;
   align-items:center;
   justify-content: center;
   flex-direction: row;
-  background-color: blueviolet;
-  height: 400px;
+  background-color: #F23869;
+  height: 800px;
 }
 
 #card_layout {
-  display: flex;
-  width: 180px;
-  max-width: 180px;
-  height: 320;
-  max-height: 320px;
-  background: rgb(253, 82, 167);
+	background: rgb(255, 255, 255);
+	background-image: url(../img/card_bg2.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 10px;
+	margin: 8px 4px;
+	width: 188px;
+	max-height: 322px;
+	height: 322px;
+	padding: 10px 0;
+	align-items: center;
+	justify-content: center;
+	break-inside: avoid;
+	transform: scale(150%);
+}
+
+#brand_logo {
+	margin:auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	height: 50px;
+	max-height: 50px;
+	max-width: 170px;
+	background-size: 150px;
+	background-repeat: no-repeat;
+	border: none;
+	cursor: pointer;
+}
+
+#employeer_photo {
+	display: flex;
+	border-radius: 5px;
+	align-items: center;
+	justify-content: center;
+	max-width: 180px;
+	height: 180px;
+	background-size: 140px;
+	cursor:pointer;
+}
+
+.img_card {
+	height: 170px;
+	margin: 0px 0px 15px 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	overflow: hidden;
+}
+
+#employeer {
+	margin: auto;
+	max-width: 160px;
+	height: 20px;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	display: block;
+	border: none;
+	font-size: auto;
+	font-weight: bold;
+	text-transform: uppercase;
+	background: none;
+}
+
+#ocupation {
+	font-size: auto;
+	font-weight: bold;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	border: none;
+	margin: 0 14px;
+	height: 20px;
+	width: 160px;
+	text-transform: uppercase;
+	background: none;
+}
+
+.img_bg_card {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 188px;
+	max-height: 322px;
+	height: 322px;
+	overflow: hidden;
+	position: relative;
+	border-radius: 10px;
+	top: -295px;
+}
+
+.back_informations {
+	margin: 10px 10PX 0PX;
+	text-transform: uppercase;
+	font-size: 10px;
+}
+
+.back_input_card {
+	margin: auto;
+	max-width: 160px;
+	width: 180PX;
+	max-height: 20PX;
+	height: 20px;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	display: block;
+	border: none;
+	font-size: 9.4px;
+	background: none;
+}
+
+#codebar-input-number {
+	margin: auto;
+	max-width: 160px;
+	width: 160PX;
+	height: 14px;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	display: block;
+	border: none;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	background: none;
+}
+
+#barcode-div {
+	height: 5em;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#code128 {
+	width: 100%;
+	height: 100%;
+}
+
+#function_btns{
+	visibility: hidden;
+}
+
+@media print{
+	header, footer, #function_btns, .menu { display:none;}
+	#card_layout {display:block;
+		transform: scale(100%);
+	}
+	.container_card {
+			display: flex;
+			flex-direction: column;
+	}
+}
+
+html {
+	scroll-behavior: smooth;
+	transition: ease-in-out 1000s;
 }
