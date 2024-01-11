@@ -72,19 +72,18 @@ function changeBackgroundImage() {
   fileExplorer.click();
 }
 
-var cardLayout = document.querySelector("#card_layout");
-var employeerInput = document.querySelector("#employeer");
-var occupationInput = document.querySelector("#occupation");
+// alterar cor da fonte da frente do crachá
 
-function updateFontColor() {
-    var backgroundColor = window.getComputedStyle(cardLayout).backgroundColor;
-    var contrastColor = Contrast(backgroundColor);
-    employeerInput.style.color = contrastColor;
-    occupationInput.style.color = contrastColor;
+const employeer = document.querySelector("#employeer");
+const occupation = document.querySelector("#ocupation");
+const bg_colorfont = document.querySelector("#bg_colorfont");
+
+function changeColor() {
+  employeer.style.color = bg_colorfont.value;
+  occupation.style.color = bg_colorfont.value;
 }
 
-updateFontColor();
-
+bg_colorfont.addEventListener("input", changeColor);
 
 
 // Barcode Generator

@@ -28,6 +28,31 @@
   padding: 5px;
 }
 
+.csFont {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.csFont p {
+  position: absolute;
+  font-weight: 800;
+  color: rgb(53, 53, 53);
+  width: 25px;
+  height: 25px;
+  margin:18px 0;
+  padding: 2px;
+  background-color: aliceblue;
+  border-radius: 50px;
+}
+
+#bg_colorfont {
+  background: none;
+  width: 60px;
+  height: 60px;
+  padding: 5px;
+}
+
 .tools_btn button:hover {
   background-color: rgb(195, 131, 255);
 }
