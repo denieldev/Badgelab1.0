@@ -4,7 +4,7 @@ function printBtnActive(){
   if (logicTest == true){
       print();            
   } else {
-      alert('A, ok tudo bem, até mais!')
+      alert('Ok tudo bem, até mais!')
   }
 }
 window.addEventListener("scroll", function(){
@@ -56,6 +56,37 @@ function bgFile() {
   }
 }
 
+function changeBackgroundImage() {
+  var cardLayout = document.querySelector("#card_layout");
+  var fileExplorer = document.createElement("input");
+  fileExplorer.type = "file";
+  fileExplorer.accept = "image/*";
+  fileExplorer.onchange = function() {
+      var file = fileExplorer.files[0];
+      var reader = new FileReader();
+      reader.onload = function(e) {
+          cardLayout.style.backgroundImage = "url('" + e.target.result + "')";
+      };
+      reader.readAsDataURL(file);
+  };
+  fileExplorer.click();
+}
+
+var cardLayout = document.querySelector("#card_layout");
+var employeerInput = document.querySelector("#employeer");
+var occupationInput = document.querySelector("#occupation");
+
+function updateFontColor() {
+    var backgroundColor = window.getComputedStyle(cardLayout).backgroundColor;
+    var contrastColor = Contrast(backgroundColor);
+    employeerInput.style.color = contrastColor;
+    occupationInput.style.color = contrastColor;
+}
+
+updateFontColor();
+
+
+
 // Barcode Generator
 function codeBarGen() {
 let codebar = document.querySelector("#codebar-input-number");
@@ -73,4 +104,9 @@ JsBarcode();
 function trocaCor(){
   var cor = document.getElementById("bg_color").value;
   document.getElementById("card_layout").style.backgroundColor = cor;
+  var cardLayout = document.querySelector("#card_layout");
+  cardLayout.style.backgroundImage = "none";
 }
+
+// mudar imagem de fundo por uma da sua biblioteca
+
